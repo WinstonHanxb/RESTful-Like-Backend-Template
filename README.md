@@ -1,4 +1,4 @@
-#RESTful-like-SSM-Template
+# RESTful-like-SSM-Template
 
 ## 介绍
 本项目是一套基于SSM基础组建的J2EE后台基础框架，适用于类`RESTful`风格的后台API开发。按照Ian Robinson博士的成熟度模型，该项目可以满足Level 2等级的`RESTful`成熟度要求。
@@ -8,15 +8,15 @@
 + **Spring 4.3.7**
 + **SpringMVC 4.3.7**
 + **Mybatis 3.4.2**
-+ **sf4j**
-+ **Spring-fox**
-+ **Druid**
++ **sf4j 1.7.25**
++ **Spring-fox 2.7.0**
++ **Druid 1.0.31**
 
 #### 工具组件
 + **Spring-Test 4.3.7**
 + **Junit 2.9.0**
-+ **Mybatis通用Mapper3 3.4.0**
-+ **Mybatis-Pagehelper**
++ **Mybatis通用Mapper 3.4.0**
++ **Mybatis-Pagehelper 5.0.0**
 
 #### 依赖管理
 + **Gradle 3.5**
