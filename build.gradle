@@ -6,7 +6,9 @@ apply plugin: 'war'
 apply plugin: 'idea'
 apply plugin: 'eclipse-wtp'
 
-
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.5'
+}
 
 repositories {
     mavenCentral()
@@ -64,7 +66,7 @@ def getDbProperties = {
     file("src/main/resources/jdbc.properties").withInputStream { inputStream ->
         properties.load(inputStream)
     }
-    properties;
+    properties
 }
 
 task mybatisGenerate  {
