@@ -29,6 +29,4 @@
 
     </mvc:annotation-driven>
 
-    <mvc:resources mapping="/swagger/**" location="/WEB-INF/swagger-ui/"/>
-
 </beans>

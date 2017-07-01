@@ -24,13 +24,13 @@ import java.util.List;
 
 @RestController
 @Api(tags = "User", description = "用户相关操作")
-@RequestMapping(value = "/users",consumes = "application/json")
+@RequestMapping(value = "/users")
 public class SysUserController {
     @Resource
     private SysUserService sysUserService;
 
     @ApiOperation(value = "查询全部用户信息")
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(value = "/list",method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
     public List<SysUserDTO> listUser() {
         List<SysUserDTO> listSysUserDTO = sysUserService.listUser();
