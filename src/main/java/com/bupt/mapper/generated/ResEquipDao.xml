@@ -11,7 +11,7 @@
     <result column="equip_model" jdbcType="VARCHAR" property="equipModel" />
     <result column="equip_type" jdbcType="VARCHAR" property="equipType" />
     <result column="equip_vendor" jdbcType="VARCHAR" property="equipVendor" />
-    <result column="equip_majortype" jdbcType="VARCHAR" property="equipMajortype" />
+    <result column="equip_major_type" jdbcType="VARCHAR" property="equipMajorType" />
     <result column="equip_sync_status" jdbcType="VARCHAR" property="equipSyncStatus" />
     <result column="equip_system_name" jdbcType="VARCHAR" property="equipSystemName" />
     <result column="property_id" jdbcType="VARCHAR" property="propertyId" />
@@ -26,7 +26,7 @@
     <!--
       WARNING - @mbg.generated
     -->
-    equip_id, equip_name, equip_name_full, equip_model, equip_type, equip_vendor, equip_majortype, 
+    equip_id, equip_name, equip_name_full, equip_model, equip_type, equip_vendor, equip_major_type, 
     equip_sync_status, equip_system_name, property_id, station_id, room_code, is_fault, 
     is_deleted, gmt_create, gmt_modified
   </sql>

@@ -42,8 +42,8 @@ public class ResEquip {
     @Column(name = "equip_vendor")
     private String equipVendor;
 
-    @Column(name = "equip_majortype")
-    private String equipMajortype;
+    @Column(name = "equip_major_type")
+    private String equipMajorType;
 
     @Column(name = "equip_sync_status")
     private String equipSyncStatus;
@@ -199,17 +199,17 @@ public class ResEquip {
     }
 
     /**
-     * @return equip_majortype
+     * @return equip_major_type
      */
-    public String getEquipMajortype() {
-        return equipMajortype;
+    public String getEquipMajorType() {
+        return equipMajorType;
     }
 
     /**
-     * @param equipMajortype
+     * @param equipMajorType
      */
-    public void setEquipMajortype(String equipMajortype) {
-        this.equipMajortype = equipMajortype == null ? null : equipMajortype.trim();
+    public void setEquipMajorType(String equipMajorType) {
+        this.equipMajorType = equipMajorType == null ? null : equipMajorType.trim();
     }
 
     /**
