@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created by  韩宪斌 on 2017/6/27.
  */
-@Service
+
 public interface SysUserService {
     /**
      * 获取所有用户

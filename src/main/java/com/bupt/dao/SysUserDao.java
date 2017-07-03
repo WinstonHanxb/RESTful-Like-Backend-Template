@@ -3,8 +3,9 @@ package com.bupt.dao;
 import com.bupt.entity.SysUser;
 
 import org.apache.ibatis.annotations.Select;
+import org.springframework.stereotype.Repository;
 import tk.mybatis.mapper.common.Mapper;
-
+@Repository
 public interface SysUserDao extends Mapper<SysUser> {
 
     /**

@@ -15,6 +15,10 @@
         </property>
     </bean>
 
+
+
+
+
     <!--配置druid监控拦截器-->
     <bean id="stat-filter" class="com.alibaba.druid.filter.stat.StatFilter">
         <property name="slowSqlMillis" value="10000" />
@@ -26,7 +30,10 @@
         <!--<property name="statementLogErrorEnabled" value="true"/>-->
         <!--<property name="connectionLogErrorEnabled" value="true" />-->
     </bean>
-
+    <!--配置SQL注入拦截器-->
+    <bean id="wall-filter" class="com.alibaba.druid.wall.WallFilter">
+        <property name="dbType" value="mysql" />
+    </bean>
     
     <!--配置druid连接池-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
@@ -68,7 +75,8 @@
         <property name="proxyFilters">
             <list>
                 <ref bean="stat-filter" />
-                <!--<ref bean="log-filter"/>-->
+                <ref bean="log-filter"/>
+                <ref bean="wall-filter"/>
             </list>
         </property>
     </bean>
