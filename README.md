@@ -70,5 +70,9 @@ password:123456
 可以在webapp/WEB-INF/web.xml中更改
 
 
+## 未来更新
++ 支持跨域访问
++ 增强对
+
 
 

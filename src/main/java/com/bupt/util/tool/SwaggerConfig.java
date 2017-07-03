@@ -1,4 +1,4 @@
-package com.bupt.util.tools;
+package com.bupt.util.tool;
 
 
 import org.springframework.context.annotation.Bean;

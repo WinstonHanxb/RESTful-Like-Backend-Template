@@ -6,10 +6,7 @@ import com.bupt.util.exception.controller.result.NoneGetException;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -17,8 +14,9 @@ import java.util.List;
 /**
  * Created by 韩宪斌 on 2017/7/3.
  */
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
-@Api(tags = "TopologyLinks",description = "拓扑连接相关操作")
+@Api(tags = "TopologyLink",description = "拓扑连接相关操作")
 @RequestMapping("/topolinks")
 public class TopologyLinkController {
     @Resource
@@ -29,7 +27,7 @@ public class TopologyLinkController {
     @ResponseStatus(HttpStatus.OK)
     public List<TopologyLinkDTO> listTopologyLink(){
         List<TopologyLinkDTO> listDTO=topologyLinkService.listTopologyLink();
-        if(listDTO==null){
+        if(listDTO.size()==0){
             throw new NoneGetException();
         }
         return listDTO;

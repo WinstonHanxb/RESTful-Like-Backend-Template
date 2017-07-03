@@ -21,7 +21,7 @@ import java.util.List;
  * Created by 韩宪斌 on 2017/6/19.
  * 对用户操作
  */
-
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @Api(tags = "User", description = "用户相关操作")
 @RequestMapping(value = "/users")
@@ -34,7 +34,7 @@ public class SysUserController {
     @ResponseStatus(HttpStatus.OK)
     public List<SysUserDTO> listUser() {
         List<SysUserDTO> listSysUserDTO = sysUserService.listUser();
-        if (listSysUserDTO == null) {
+        if (listSysUserDTO.size()==0) {
             throw new NoneGetException();
         }
         return listSysUserDTO;
