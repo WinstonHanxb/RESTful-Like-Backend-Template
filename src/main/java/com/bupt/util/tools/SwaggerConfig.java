@@ -31,13 +31,12 @@ public class SwaggerConfig {
     private ApiInfo buildApiInf(){
         return new ApiInfoBuilder()
                 //页面标题
-                .title("SSM后台API示例")
+                .title("基于SSM的RESTful-like后台框架")
                 //创建人
-                .contact(new Contact("WinstonHan","https://github.com/WinstonHanxb","winstonhan@163.com"))
+                .contact(new Contact("WInstonHan","https://github.com/WinstonHanxb/RESTful-like-SSM-Template","winstonhan@163.com"))
                 //版本号
-                .version("0.1")
+                .version("0.2")
                 //描述
-                .description("本项目为类RESTful接口的后台框架API")
                 .build();
 
     }

@@ -21,7 +21,7 @@
 #### 依赖管理
 + **Gradle 3.5**
 
-##使用说明
+## 使用说明
 #### 安装
 ```$xslt
 git clone https://github.com/WinstonHanxb/RESTful-like-SSM-Template
@@ -54,6 +54,20 @@ sqlMapperConfig.xml
 ```
 
 #### 其他
+本项目在运行以后有两个地址：
+```apple js
+#Swagger生成API页面地址
+http://IPaddress(localhost):Port(8080)//swagger-ui.html
+
+#Druid连接池后台配置地址
+http://localhost:8080/druid/login.html
+```
+其中Druid默认的登陆账户和密码为：
+```apple js
+userName:admin
+password:123456
+```
+可以在webapp/WEB-INF/web.xml中更改
 
 
 
