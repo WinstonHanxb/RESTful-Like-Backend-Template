@@ -36,9 +36,6 @@ public class ResTopologyLink {
     @Column(name = "link_length")
     private Long linkLength;
 
-    @Column(name = "link_tran_model")
-    private String linkTranModel;
-
     @Column(name = "link_sync_status")
     private String linkSyncStatus;
 
@@ -202,20 +199,6 @@ public class ResTopologyLink {
      */
     public void setLinkLength(Long linkLength) {
         this.linkLength = linkLength;
-    }
-
-    /**
-     * @return link_tran_model
-     */
-    public String getLinkTranModel() {
-        return linkTranModel;
-    }
-
-    /**
-     * @param linkTranModel
-     */
-    public void setLinkTranModel(String linkTranModel) {
-        this.linkTranModel = linkTranModel == null ? null : linkTranModel.trim();
     }
 
     /**

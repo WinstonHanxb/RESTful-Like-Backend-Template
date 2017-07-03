@@ -8,6 +8,7 @@ import java.util.List;
 
 /**
  * Created by  韩宪斌 on 2017/6/27.
+ * 用户
  */
 
 public interface SysUserService {

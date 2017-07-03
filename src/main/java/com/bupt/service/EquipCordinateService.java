@@ -7,6 +7,7 @@ import java.util.List;
 
 /**
  * Created by 韩宪斌 on 2017/7/3.
+ * 设备坐标
  */
 
 public interface EquipCordinateService {

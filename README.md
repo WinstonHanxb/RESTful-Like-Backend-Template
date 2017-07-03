@@ -57,10 +57,10 @@ sqlMapperConfig.xml
 本项目在运行以后有两个地址：
 ```apple js
 #Swagger生成API页面地址
-http://IPaddress(localhost):Port(8080)//swagger-ui.html
+http://IP(localhost):Port(8080)//swagger-ui.html
 
 #Druid连接池后台配置地址
-http://localhost:8080/druid/login.html
+http://IP(localhost):Port(8080)/druid/login.html
 ```
 其中Druid默认的登陆账户和密码为：
 ```apple js

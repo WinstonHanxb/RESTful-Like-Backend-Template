@@ -16,7 +16,7 @@ import java.util.List;
  * Created by 韩宪斌 on 2017/7/3.
  */
 @Service("equipCordinateService")
-public class EquipCordinateImpl implements EquipCordinateService {
+public class EquipCordinateServiceImpl implements EquipCordinateService {
     @Resource
     private ResEquipCordinateDao resEquipCordinateDao;
 
