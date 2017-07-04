@@ -14,5 +14,5 @@ public interface SysUserDao extends Mapper<SysUser> {
      * @return SysUser
      */
     @Select("select id,user_name as userName,password from sys_user where user_name=#{userName}")
-    public SysUser getUserByName(String userName);
+    SysUser getUserByName(String userName);
 }

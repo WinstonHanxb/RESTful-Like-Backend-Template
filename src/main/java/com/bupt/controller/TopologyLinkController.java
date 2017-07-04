@@ -14,7 +14,6 @@ import java.util.List;
 /**
  * Created by 韩宪斌 on 2017/7/3.
  */
-@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @Api(tags = "TopologyLink",description = "拓扑连接相关操作")
 @RequestMapping("/topolinks")

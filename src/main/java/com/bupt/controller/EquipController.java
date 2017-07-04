@@ -15,7 +15,6 @@ import java.util.List;
 /**
  * Created by 韩宪斌 on 2017/7/3.
  */
-@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @Api(tags = "Equip", description = "设备相关操作")
 @RequestMapping("/equips")

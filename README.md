@@ -72,7 +72,7 @@ password:123456
 
 ## 未来更新
 + 支持跨域访问
-+ 增强对自定义SQL注解的支持，增强型简化SQL
++ 为MybatisSQL注解添加一些常见的LanguageDriver
 + 扩展通用Mapper接口
 
 

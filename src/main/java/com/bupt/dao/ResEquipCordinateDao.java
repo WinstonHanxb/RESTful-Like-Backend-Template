@@ -15,5 +15,5 @@ import java.util.List;
 @Repository
 public interface ResEquipCordinateDao extends Mapper<ResEquipCordinate> {
     @Select("select equip_id as equipId,equip_name as equipName,x,y from res_equip_cordinate where equip_system_name=#{systemName}")
-    public List<ResEquipCordinate> listEquipCordinateBySystemName(String systemName);
+    List<ResEquipCordinate> listEquipCordinateBySystemName(String systemName);
 }

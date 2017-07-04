@@ -19,9 +19,7 @@ import java.util.List;
 
 /**
  * Created by 韩宪斌 on 2017/6/19.
- * 对用户操作
  */
-@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @Api(tags = "User", description = "用户相关操作")
 @RequestMapping(value = "/users")
@@ -51,7 +49,7 @@ public class SysUserController {
         return sysUserDTO;
     }
 
-    @ApiOperation(value = "創建新用戶，忽略id")
+    @ApiOperation(value = "创建新用户，忽略id")
     @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
     public SysUserDTO saveUser(@RequestBody SysUserDTO sysUserDTO) {
