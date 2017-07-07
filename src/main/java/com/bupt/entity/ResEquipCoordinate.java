@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 import java.util.Date;
 import javax.persistence.*;
 
-@Table(name = "res_equip_cordinate")
-public class ResEquipCordinate {
+@Table(name = "res_equip_coordinate")
+public class ResEquipCoordinate {
     /**
      * 设备id
      */
@@ -34,6 +34,12 @@ public class ResEquipCordinate {
      * 设备坐标Y
      */
     private BigDecimal y;
+
+    /**
+     * 是否删除
+     */
+    @Column(name = "is_delete")
+    private Byte isDelete;
 
     /**
      * 插入时间
@@ -135,6 +141,24 @@ public class ResEquipCordinate {
      */
     public void setY(BigDecimal y) {
         this.y = y;
+    }
+
+    /**
+     * 获取是否删除
+     *
+     * @return is_delete - 是否删除
+     */
+    public Byte getIsDelete() {
+        return isDelete;
+    }
+
+    /**
+     * 设置是否删除
+     *
+     * @param isDelete 是否删除
+     */
+    public void setIsDelete(Byte isDelete) {
+        this.isDelete = isDelete;
     }
 
     /**

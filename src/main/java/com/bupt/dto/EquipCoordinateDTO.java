@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 /**
  * Created by 韩宪斌 on 2017/7/3.
  */
-public class EquipCordinateDTO {
+public class EquipCoordinateDTO {
     private String equipId;
     private String equipName;
     private BigDecimal x;

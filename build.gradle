@@ -35,7 +35,7 @@ dependencies {
 
     //maven仓库中心没有的jar，则放入libs目录下
     compile fileTree(dir: 'libs', include: ['*.jar'])
-
+    compile group: 'dom4j', name: 'dom4j', version: '1.6.1'
 
     compile 'com.fasterxml.jackson.core:jackson-core:2.8.5'
     compile 'com.fasterxml.jackson.core:jackson-databind:2.8.5'
@@ -100,4 +100,7 @@ task mybatisGenerate  {
             propertyref(name: 'sqlMapperPackage')
         }
     }
+
+
+
 }

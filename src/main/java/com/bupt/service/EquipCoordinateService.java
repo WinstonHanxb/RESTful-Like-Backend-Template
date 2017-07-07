@@ -1,6 +1,6 @@
 package com.bupt.service;
 
-import com.bupt.dto.EquipCordinateDTO;
+import com.bupt.dto.EquipCoordinateDTO;
 
 
 import java.util.List;
@@ -10,12 +10,12 @@ import java.util.List;
  * 设备坐标
  */
 
-public interface EquipCordinateService {
+public interface EquipCoordinateService {
 
     /**
      * 根据所需的系统名称获取设备坐标
      * @param systemName
      * @return
      */
-    List<EquipCordinateDTO> listEquipCordinateBySystemName(String systemName);
+    List<EquipCoordinateDTO> listEquipCoordinateBySystemName(String systemName);
 }

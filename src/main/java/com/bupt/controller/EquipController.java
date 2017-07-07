@@ -1,7 +1,7 @@
 package com.bupt.controller;
 
-import com.bupt.dto.EquipCordinateDTO;
-import com.bupt.service.EquipCordinateService;
+import com.bupt.dto.EquipCoordinateDTO;
+import com.bupt.service.EquipCoordinateService;
 import com.bupt.util.exception.controller.input.NullArgumentException;
 import com.bupt.util.exception.controller.result.NoneGetException;
 import io.swagger.annotations.Api;
@@ -20,16 +20,16 @@ import java.util.List;
 @RequestMapping("/equips")
 public class EquipController {
     @Resource
-    private EquipCordinateService equipCordinateService;
+    private EquipCoordinateService equipCoordinateService;
 
     @ApiOperation(value = "根据系统名称获取设备坐标信息")
-    @RequestMapping(value = "/cordinates/{systemName}",method = RequestMethod.GET)
+    @RequestMapping(value = "/coordinates/{systemName}",method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
-    public List<EquipCordinateDTO> listEquipCordinatesBySystemName(@PathVariable  String systemName){
+    public List<EquipCoordinateDTO> listEquipCoordinatesBySystemName(@PathVariable  String systemName){
         if(systemName==null){
             throw new NullArgumentException("systemName");
         }
-        List<EquipCordinateDTO> listDTO=equipCordinateService.listEquipCordinateBySystemName(systemName);
+        List<EquipCoordinateDTO> listDTO= equipCoordinateService.listEquipCoordinateBySystemName(systemName);
         if(listDTO.size()==0){
             throw new NoneGetException();
         }

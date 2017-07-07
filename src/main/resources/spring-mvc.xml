@@ -29,13 +29,11 @@
 
     </mvc:annotation-driven>
 
+
+    <bean class="com.bupt.util.tools.SwaggerConfig" />
     <!--跨域访问配置-->
     <mvc:cors>
-        <mvc:mapping path="/api/**"
-                     allowed-origins="*"
-                     allowed-methods="POST, GET, OPTIONS, DELETE, PUT"
-                     allowed-headers="Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
-                     allow-credentials="true" />
+        <mvc:mapping path="/**" allowed-methods="*"/>
     </mvc:cors>
 
 </beans>
