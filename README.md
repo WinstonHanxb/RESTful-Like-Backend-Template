@@ -1,4 +1,4 @@
-# RESTful-like-SSM-Template
+# RESTful-Like-Backend-Template
 
 ## 介绍
 本项目是一套基于SSM基础组建的J2EE后台基础框架，适用于类`RESTful`风格的后台API开发。按照Ian Robinson博士的成熟度模型，该项目可以满足Level 2等级的`RESTful`成熟度要求。
